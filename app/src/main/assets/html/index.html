@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<from id="frm">
+    <br> Number 1 : <input type="text" id="num_1">
+    <br> Number 2 : <input type="text" id="num_2">
+    <br> <input type="button" id="plus" value="+">
+    <br> <input type="button" id="minus"  value="-">
+    <br> <input type="button" id="multiply" value="*">
+    <br> <input type="button" id="division" value="/">
+    <br> <input type="button"  id="eq" value="=">
+    <br> RESULT : <h4 id="result"></h4>
+
+</from>
+
+<script>
+
+$('#plus').click(function(){
+   let num1 = $('#num_1').val();
+   let num2 = $('#num_2').val();
+   let result = hybrid.sum(num1, num2);
+
+   $('#result').text(result);
+
+   showToast("java + html Connected!");
+});
+
+</script>
+
+</body>
+</html>
